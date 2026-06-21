@@ -1,0 +1,35 @@
+name: Check Adaptation Fund for updates
+
+on:
+  schedule:
+    # Runs once a day at 06:00 UTC (about 11:00am Pakistan time)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    # This lets you trigger it manually from the GitHub Actions tab,
+    # instead of waiting for the schedule. Useful for the first test run.
+
+permissions:
+  contents: write
+
+jobs:
+  check-for-updates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run the Adaptation Fund scraper
+        run: python scrape_af.py
+
+      - name: Save any changes back to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json last_snapshot_af.txt
+          git diff --quiet --cached || git commit -m "Automated check: Adaptation Fund page"
+          git push
