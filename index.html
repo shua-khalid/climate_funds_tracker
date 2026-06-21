@@ -58,7 +58,7 @@
   .fund-card { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: 12px; padding: 16px 20px; }
   .fund-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
   .fund-id { display: flex; align-items: center; gap: 10px; }
-  .icon-box { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .icon-box { min-width: 44px; height: 36px; padding: 0 6px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .fund-name { font-weight: 600; font-size: 15px; margin: 0; }
   .fund-short { font-size: 12px; color: var(--text-secondary); margin: 0; }
   .status-pill { font-size: 12px; padding: 4px 10px; border-radius: 8px; white-space: nowrap; }
@@ -172,6 +172,30 @@ const funds = [
 ];
 
 let activeFilter = 'all';
+let liveData = null;
+
+async function loadLiveData() {
+  try {
+    const response = await fetch('data.json', { cache: 'no-store' });
+    if (response.ok) {
+      liveData = await response.json();
+    }
+  } catch (e) {
+    liveData = null;
+  }
+  render();
+}
+
+function liveBadgeFor(fundId) {
+  if (!liveData || !liveData.funds || !liveData.funds[fundId]) return '';
+  const entry = liveData.funds[fundId];
+  const changedText = entry.changedSinceLastView
+    ? '<span style="color:var(--text-primary);font-weight:600;">Page changed</span> - '
+    : '';
+  return `<p class="meta-line muted" style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--border);">
+    ${changedText}Live check: last looked at ${entry.lastChecked}. ${entry.note}
+  </p>`;
+}
 
 function render() {
   const list = document.getElementById('cardList');
@@ -185,8 +209,8 @@ function render() {
     <div class="fund-card">
       <div class="fund-top">
         <div class="fund-id">
-          <div class="icon-box" style="background:${c.bg};color:${c.text}">
-            
+          <div class="icon-box" style="background:${c.bg};color:${c.text};font-size:12px;font-weight:600;">
+            ${f.short}
           </div>
           <div>
             <p class="fund-name">${f.name}</p>
@@ -202,6 +226,7 @@ function render() {
       <p class="meta-line"><span class="label-inline">Deadline / timing:</span> ${f.deadline}</p>
       <p class="meta-line"><span class="label-inline">SP entry point:</span> ${f.spLink}</p>
       <p class="meta-line muted">${f.prep}</p>
+      ${liveBadgeFor(f.id)}
     </div>`;
   }).join('');
 }
@@ -215,13 +240,17 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   });
 });
 
-document.getElementById('scanBtn').addEventListener('click', () => {
+document.getElementById('scanBtn').addEventListener('click', async () => {
   const status = document.getElementById('scanStatus');
   status.style.display = 'block';
-  status.innerHTML = 'Checking 5 fund sources for changes...';
-  setTimeout(() => {
-    status.innerHTML = 'Done - Simulated scan complete: FRLD call timing and GEF-9 status are the two items closest to action. In a live version, this step would re-fetch each fund page and diff against yesterday\'s saved data.';
-  }, 1400);
+  status.innerHTML = 'Reading latest saved check from data.json...';
+  await loadLiveData();
+  if (liveData && liveData.funds && liveData.funds.af) {
+    const entry = liveData.funds.af;
+    status.innerHTML = `Loaded. Adaptation Fund was last automatically checked on ${entry.lastChecked} by the scheduled GitHub Actions job (runs daily). Other funds are not yet wired to automatic checking.`;
+  } else {
+    status.innerHTML = 'Could not load data.json. If you just set this up, make sure the file exists in the repo root and the Action has run at least once.';
+  }
 });
 
 document.getElementById('emailBtn').addEventListener('click', () => {
@@ -234,7 +263,4 @@ document.getElementById('emailBtn').addEventListener('click', () => {
   window.open(mailto, '_blank');
 });
 
-render();
-</script>
-</body>
-</html>
+loadLiveData();
