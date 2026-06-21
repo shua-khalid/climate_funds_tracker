@@ -1,0 +1,11 @@
+{
+  "funds": {
+    "af": {
+      "lastChecked": "2026-06-21",
+      "lastChanged": null,
+      "changedSinceLastView": false,
+      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
+    }
+  }
+}
