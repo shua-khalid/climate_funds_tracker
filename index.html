@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Climate Funds Tracker — GIZ ASP Programme</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css">
+<title>Climate Funds Tracker  -  GIZ ASP Programme</title>
 <style>
   :root {
     --bg-page: #F7F6F2;
@@ -82,8 +81,8 @@
       <p class="subtitle">ASP for Climate Resilience &middot; GIZ Pakistan &middot; prototype</p>
     </div>
     <div class="btn-row">
-      <button class="btn" id="scanBtn"><i class="ti ti-refresh" aria-hidden="true"></i> Check for updates</button>
-      <button class="btn" id="emailBtn"><i class="ti ti-mail" aria-hidden="true"></i> Send me this briefing</button>
+      <button class="btn" id="scanBtn">Check for updates</button>
+      <button class="btn" id="emailBtn">Send me this briefing</button>
     </div>
   </div>
 
@@ -105,7 +104,7 @@
 
   <p class="footnote">
     Data seeded from the GIZ/BMZ guidance note "Scaling Social Protection for Climate Action" (Nov 2025).
-    "Check for updates" simulates what a scheduled scraper would surface from live fund pages — not yet connected
+    "Check for updates" simulates what a scheduled scraper would surface from live fund pages  -  not yet connected
     to the internet. "Send me this briefing" opens a real, ready-to-send email in your default mail app.
   </p>
 </div>
@@ -125,16 +124,16 @@ const funds = [
     color: 'coral', icon: 'ti-alert-triangle', status: 'urgent',
     statusLabel: 'First call expected at COP30',
     window: 'Barbados Implementation Modalities (start-up phase)',
-    amount: 'USD 5M–20M per request (USD 250M total, first phase)',
+    amount: 'USD 5M-20M per request (USD 250M total, first phase)',
     deadline: 'Call for proposals expected late 2025 / launching at COP30',
     spLink: 'No SP-specific instrument yet, but Decision 1/CP.28 explicitly calls for scaling adaptive social protection. 50% floor reserved for SIDS/LDCs.',
-    prep: 'National authority/focal point not yet confirmed for Pakistan — this is the first action item. Track eligibility criteria due Oct 2025.'
+    prep: 'National authority/focal point not yet confirmed for Pakistan  -  this is the first action item. Track eligibility criteria due Oct 2025.'
   },
   {
     id: 'gcf', name: 'Green Climate Fund', short: 'GCF',
     color: 'teal', icon: 'ti-leaf', status: 'open',
-    statusLabel: 'Rolling — regular project cycle open',
-    window: 'Regular Project Cycle + Simplified Approval Process (≤USD 25M)',
+    statusLabel: 'Rolling  -  regular project cycle open',
+    window: 'Regular Project Cycle + Simplified Approval Process (<=USD 25M)',
     amount: 'USD 7M readiness funding per country (4-yr cycle); projects often exceed USD 250M',
     deadline: 'Rolling submission; review + approval ~9 months',
     spLink: 'Funded LINK programme in Mozambique (USD 23.5M) linking social protection (PASP) with climate adaptation. FAO-GCF review found 23 SP-linked projects.',
@@ -144,20 +143,20 @@ const funds = [
     id: 'gef', name: 'Global Environment Facility (incl. LDCF/SCCF)', short: 'GEF',
     color: 'green', icon: 'ti-world', status: 'watch',
     statusLabel: 'GEF-9 Replenishment Resolution expected May 2026',
-    window: 'LDCF / SCCF — GEF-9 draft strategy explicitly lists adaptive social protection',
+    window: 'LDCF / SCCF  -  GEF-9 draft strategy explicitly lists adaptive social protection',
     amount: 'LDCF cap raised to USD 20M/country (GEF-8); SCCF SIDS window USD 3M',
     deadline: 'GEF-9 adoption ~May 2026; country programming discussions already started',
-    spLink: 'First GEF strategy to explicitly name adaptive social protection as one of six adaptation approaches — cash transfers, public works, social insurance, labour market.',
+    spLink: 'First GEF strategy to explicitly name adaptive social protection as one of six adaptation approaches  -  cash transfers, public works, social insurance, labour market.',
     prep: 'Engage GEF Operational Focal Point now, ahead of GEF-9 adoption, to position SP proposals early in the pipeline.'
   },
   {
     id: 'af', name: 'Adaptation Fund', short: 'AF',
     color: 'amber', icon: 'ti-droplet', status: 'open',
-    statusLabel: 'Rolling — four funding windows open',
+    statusLabel: 'Rolling  -  four funding windows open',
     window: 'Action Window (up to USD 25M/country) + Locally Led Adaptation Window',
-    amount: 'USD 750K–USD 25M single-country; up to USD 40M regional',
+    amount: 'USD 750K-USD 25M single-country; up to USD 40M regional',
     deadline: 'Rolling, reviewed on an ongoing basis by the Board',
-    spLink: '19 projects with direct SP components already funded (USD 155M portfolio). Tunisia IESS-Adapt is the flagship example — cash transfers aligned to national programme.',
+    spLink: '19 projects with direct SP components already funded (USD 155M portfolio). Tunisia IESS-Adapt is the flagship example  -  cash transfers aligned to national programme.',
     prep: 'No SP-specific window, but Readiness Programme grants (up to USD 250K) can fund proposal development.'
   },
   {
@@ -165,9 +164,9 @@ const funds = [
     color: 'purple', icon: 'ti-building-bank', status: 'watch',
     statusLabel: 'ARISE programme launching in course of 2026',
     window: 'ARISE (successor to PPCR) + Industry Decarbonization + Accelerating Coal Transition',
-    amount: 'USD 10M–500M depending on programme; 5–10 yr duration',
-    deadline: 'ARISE launch planned 2026 — CIF actively seeking implementation funding now',
-    spLink: 'ARISE design document explicitly recommends adaptive social protection mechanisms to safeguard livelihoods — strongest SP language of any CIF programme to date.',
+    amount: 'USD 10M-500M depending on programme; 5-10 yr duration',
+    deadline: 'ARISE launch planned 2026  -  CIF actively seeking implementation funding now',
+    spLink: 'ARISE design document explicitly recommends adaptive social protection mechanisms to safeguard livelihoods  -  strongest SP language of any CIF programme to date.',
     prep: 'Access only via MDBs (not direct). Technical Assistance Facility (TAF) grants available for early-stage SP-linked concept work.'
   }
 ];
@@ -187,7 +186,7 @@ function render() {
       <div class="fund-top">
         <div class="fund-id">
           <div class="icon-box" style="background:${c.bg};color:${c.text}">
-            <i class="ti ${f.icon}" aria-hidden="true"></i>
+            
           </div>
           <div>
             <p class="fund-name">${f.name}</p>
@@ -200,9 +199,9 @@ function render() {
         <div><p class="detail-label">Window</p><p class="detail-value">${f.window}</p></div>
         <div><p class="detail-label">Funding</p><p class="detail-value">${f.amount}</p></div>
       </div>
-      <p class="meta-line"><i class="ti ti-calendar" aria-hidden="true"></i><span class="label-inline">Deadline / timing:</span> ${f.deadline}</p>
-      <p class="meta-line"><i class="ti ti-link" aria-hidden="true"></i><span class="label-inline">SP entry point:</span> ${f.spLink}</p>
-      <p class="meta-line muted"><i class="ti ti-checklist" aria-hidden="true"></i>${f.prep}</p>
+      <p class="meta-line"><span class="label-inline">Deadline / timing:</span> ${f.deadline}</p>
+      <p class="meta-line"><span class="label-inline">SP entry point:</span> ${f.spLink}</p>
+      <p class="meta-line muted">${f.prep}</p>
     </div>`;
   }).join('');
 }
@@ -219,18 +218,18 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 document.getElementById('scanBtn').addEventListener('click', () => {
   const status = document.getElementById('scanStatus');
   status.style.display = 'block';
-  status.innerHTML = '<i class="ti ti-loader-2" aria-hidden="true"></i> Checking 5 fund sources for changes…';
+  status.innerHTML = 'Checking 5 fund sources for changes...';
   setTimeout(() => {
-    status.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Simulated scan complete: FRLD call timing and GEF-9 status are the two items closest to action. In a live version, this step would re-fetch each fund page and diff against yesterday\'s saved data.';
+    status.innerHTML = 'Done - Simulated scan complete: FRLD call timing and GEF-9 status are the two items closest to action. In a live version, this step would re-fetch each fund page and diff against yesterday\'s saved data.';
   }, 1400);
 });
 
 document.getElementById('emailBtn').addEventListener('click', () => {
-  const subject = 'Climate Funds Briefing — ASP Programme Tracker';
+  const subject = 'Climate Funds Briefing  -  ASP Programme Tracker';
   const lines = funds.map(f =>
-    `${f.short} — ${f.statusLabel}\nWindow: ${f.window}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\n`
+    `${f.short}  -  ${f.statusLabel}\nWindow: ${f.window}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\n`
   ).join('\n');
-  const body = `Climate funds briefing, generated from GIZ ASP-Climate guidance note (Nov 2025)\n\n${lines}\nGenerated for review — not yet auto-sent.`;
+  const body = `Climate funds briefing, generated from GIZ ASP-Climate guidance note (Nov 2025)\n\n${lines}\nGenerated for review  -  not yet auto-sent.`;
   const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.open(mailto, '_blank');
 });
