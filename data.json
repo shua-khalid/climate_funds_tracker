@@ -1,10 +1,10 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-06-21",
+      "lastChecked": "2026-06-22",
       "lastChanged": null,
       "changedSinceLastView": false,
-      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     }
   }
