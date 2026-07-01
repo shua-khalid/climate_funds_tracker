@@ -103,9 +103,9 @@
   <div class="card-list" id="cardList"></div>
 
   <p class="footnote">
-    Data seeded from the GIZ/BMZ guidance note "Scaling Social Protection for Climate Action" (Nov 2025).
-    "Check for updates" simulates what a scheduled scraper would surface from live fund pages  -  not yet connected
-    to the internet. "Send me this briefing" opens a real, ready-to-send email in your default mail app.
+    Fund data seeded from the GIZ/BMZ guidance note "Scaling Social Protection for Climate Action" (Nov 2025), updated July 2026.
+    All 5 fund pages are checked automatically every day at 06:00 UTC via GitHub Actions - cards show when pages last changed.
+    "Send me this briefing" opens a ready-to-send email in your default mail app.
   </p>
 </div>
 
@@ -122,12 +122,12 @@ const funds = [
   {
     id: 'frld', name: 'Fund for responding to Loss and Damage', short: 'FRLD',
     color: 'coral', icon: 'ti-alert-triangle', status: 'urgent',
-    statusLabel: 'First call expected at COP30',
-    window: 'Barbados Implementation Modalities (start-up phase)',
+    statusLabel: 'Board approving first requests July 2026',
+    window: 'Barbados Implementation Modalities (BIM) - start-up phase',
     amount: 'USD 5M-20M per request (USD 250M total, first phase)',
-    deadline: 'Call for proposals expected late 2025 / launching at COP30',
-    spLink: 'No SP-specific instrument yet, but Decision 1/CP.28 explicitly calls for scaling adaptive social protection. 50% floor reserved for SIDS/LDCs.',
-    prep: 'National authority/focal point not yet confirmed for Pakistan  -  this is the first action item. Track eligibility criteria due Oct 2025.'
+    deadline: 'BIM call launched 10 Nov 2025 at COP30. Submission deadline was 15 June 2026 (now passed). Board expected to approve first requests July 2026.',
+    spLink: 'Decision 1/CP.28 explicitly calls for scaling adaptive social protection. 50% floor reserved for SIDS/LDCs. SP named as eligible activity for rapid response and recovery.',
+    prep: 'BIM phase 1 window has closed. Watch July 2026 Board decisions for approved projects - these will signal what the fund prioritises for phase 2. Second replenishment process begins 2027.'
   },
   {
     id: 'gcf', name: 'Green Climate Fund', short: 'GCF',
@@ -141,13 +141,13 @@ const funds = [
   },
   {
     id: 'gef', name: 'Global Environment Facility (incl. LDCF/SCCF)', short: 'GEF',
-    color: 'green', icon: 'ti-world', status: 'watch',
-    statusLabel: 'GEF-9 Replenishment Resolution expected May 2026',
-    window: 'LDCF / SCCF  -  GEF-9 draft strategy explicitly lists adaptive social protection',
-    amount: 'LDCF cap raised to USD 20M/country (GEF-8); SCCF SIDS window USD 3M',
-    deadline: 'GEF-9 adoption ~May 2026; country programming discussions already started',
-    spLink: 'First GEF strategy to explicitly name adaptive social protection as one of six adaptation approaches  -  cash transfers, public works, social insurance, labour market.',
-    prep: 'Engage GEF Operational Focal Point now, ahead of GEF-9 adoption, to position SP proposals early in the pipeline.'
+    color: 'green', icon: 'ti-world', status: 'open',
+    statusLabel: 'GEF-9 now active - country programming open',
+    window: 'LDCF / SCCF under GEF-9 - adaptive social protection named as core approach',
+    amount: 'LDCF cap USD 20M/country; SCCF SIDS window USD 3M; GEF-9 runs July 2026-June 2030',
+    deadline: 'GEF-9 adopted ~May/June 2026 and now active. Country programming discussions underway. Council meets twice yearly to approve work programmes.',
+    spLink: 'GEF-9 is the first GEF strategy to explicitly name adaptive social protection as one of six adaptation approaches - cash transfers, public works, social insurance, labour market interventions.',
+    prep: 'GEF-9 is now active - engage your GEF Operational Focal Point immediately to position SP proposals in the new cycle pipeline before early work programmes fill up.'
   },
   {
     id: 'af', name: 'Adaptation Fund', short: 'AF',
@@ -162,12 +162,12 @@ const funds = [
   {
     id: 'cif', name: 'Climate Investment Funds', short: 'CIF',
     color: 'purple', icon: 'ti-building-bank', status: 'watch',
-    statusLabel: 'ARISE programme launching in course of 2026',
-    window: 'ARISE (successor to PPCR) + Industry Decarbonization + Accelerating Coal Transition',
+    statusLabel: 'ARISE EOI deadline passed - evaluation underway',
+    window: 'ARISE (launched COP30) + Industry Decarbonization + Accelerating Coal Transition',
     amount: 'USD 10M-500M depending on programme; 5-10 yr duration',
-    deadline: 'ARISE launch planned 2026  -  CIF actively seeking implementation funding now',
-    spLink: 'ARISE design document explicitly recommends adaptive social protection mechanisms to safeguard livelihoods  -  strongest SP language of any CIF programme to date.',
-    prep: 'Access only via MDBs (not direct). Technical Assistance Facility (TAF) grants available for early-stage SP-linked concept work.'
+    deadline: 'ARISE launched at COP30 Nov 2025. EOI deadline was 19 June 2026 (now passed). Independent expert group now evaluating submissions; selected countries invited to prepare Investment Plans.',
+    spLink: 'ARISE EOI explicitly asks applicants to explain how proposals advance adaptive social protection and locally-led adaptation - strongest SP language of any CIF programme to date.',
+    prep: 'EOI window has closed. If Pakistan did not submit, engage your CIF national focal point now about positioning for the next ARISE entry point or other CIF windows (Industry Decarbonization, Coal Transition).'
   }
 ];
 
