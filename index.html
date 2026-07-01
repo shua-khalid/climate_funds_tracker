@@ -252,7 +252,7 @@ document.getElementById('scanBtn').addEventListener('click', async () => {
   await loadLiveData();
   if (liveData && liveData.funds && liveData.funds.af) {
     const entry = liveData.funds.af;
-    status.innerHTML = `Loaded. Adaptation Fund was last automatically checked on ${entry.lastChecked} by the scheduled GitHub Actions job (runs daily). Other funds are not yet wired to automatic checking.`;
+    status.innerHTML = `Loaded. All 5 funds were last automatically checked on ${entry.lastChecked} by the scheduled GitHub Actions job (runs daily at 06:00 UTC). Fund cards below show individual check results.`;
   } else {
     status.innerHTML = 'Could not load data.json. If you just set this up, make sure the file exists in the repo root and the Action has run at least once.';
   }
