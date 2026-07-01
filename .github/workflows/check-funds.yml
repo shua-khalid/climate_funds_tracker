@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json last_snapshot_af.txt last_snapshot_gcf.txt last_snapshot_cif.txt last_snapshot_gef.txt last_snapshot_frld.txt
+          git add data.json last_snapshot_af.txt last_snapshot_gcf.txt last_snapshot_cif.txt last_snapshot_gef.txt last_snapshot_frld.txt last_snapshot_frld_news.txt last_snapshot_frld_b9.txt
           git diff --quiet --cached || git commit -m "Automated check: all 5 climate funds"
           git push
