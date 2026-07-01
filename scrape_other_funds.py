@@ -47,6 +47,14 @@ FUNDS_TO_CHECK = {
         "url": "https://www.frld.org/",
         "snapshot_file": "last_snapshot_frld.txt",
     },
+    "frld_news": {
+        "url": "https://www.frld.org/news",
+        "snapshot_file": "last_snapshot_frld_news.txt",
+    },
+    "frld_b9": {
+        "url": "https://www.frld.org/nodeninth-meeting-board-frld",
+        "snapshot_file": "last_snapshot_frld_b9.txt",
+    },
 }
 
 
