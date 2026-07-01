@@ -82,17 +82,13 @@
     </div>
     <div class="btn-row">
       <button class="btn" id="scanBtn">Check for updates</button>
-      <button class="btn" id="emailBtn">Send me this briefing</button>
+      <button class="btn" id="emailBtn">Copy briefing to clipboard</button>
     </div>
   </div>
 
   <div class="status-banner" id="scanStatus"></div>
 
-  <div class="stats">
-    <div class="stat-card"><p class="stat-label">Funds tracked</p><p class="stat-value">5</p></div>
-    <div class="stat-card"><p class="stat-label">Open / upcoming windows</p><p class="stat-value">6</p></div>
-    <div class="stat-card"><p class="stat-label">Within 90 days</p><p class="stat-value warn">2</p></div>
-    <div class="stat-card"><p class="stat-label">Source doc</p><p class="stat-value" style="font-size:13px;line-height:1.4">GIZ ASP-Climate guidance note, Nov 2025</p></div>
+  <div class="stats" id="statsRow">
   </div>
 
   <div class="filter-row" id="filterRow">
@@ -102,10 +98,9 @@
 
   <div class="card-list" id="cardList"></div>
 
-  <p class="footnote">
-    Fund data seeded from the GIZ/BMZ guidance note "Scaling Social Protection for Climate Action" (Nov 2025), updated July 2026.
-    All 5 fund pages are checked automatically every day at 06:00 UTC via GitHub Actions - cards show when pages last changed.
-    "Send me this briefing" opens a ready-to-send email in your default mail app.
+  <p class="footnote" id="footnote">
+    All 5 fund pages checked automatically every day at 06:00 UTC via GitHub Actions.
+    "Copy briefing to clipboard" copies a summary of all funds ready to paste into an email.
   </p>
 </div>
 
@@ -202,7 +197,41 @@ function liveBadgeFor(fundId) {
   </p>`;
 }
 
+function renderStats() {
+  const total = funds.length;
+  const open = funds.filter(f => f.status === 'open').length;
+  const urgent = funds.filter(f => f.status === 'urgent' || f.status === 'watch').length;
+  let changed = 0;
+  if (liveData && liveData.funds) {
+    changed = Object.values(liveData.funds).filter(e => e.changedSinceLastView).length;
+  }
+  const lastChecked = (liveData && liveData.funds && liveData.funds.af)
+    ? liveData.funds.af.lastChecked
+    : 'not yet run';
+
+  document.getElementById('statsRow').innerHTML = `
+    <div class="stat-card"><p class="stat-label">Funds tracked</p><p class="stat-value">${total}</p></div>
+    <div class="stat-card"><p class="stat-label">Rolling windows open</p><p class="stat-value">${open}</p></div>
+    <div class="stat-card"><p class="stat-label">Time-sensitive</p><p class="stat-value${urgent > 0 ? ' warn' : ''}">${urgent}</p></div>
+    <div class="stat-card"><p class="stat-label">Pages changed today</p><p class="stat-value${changed > 0 ? ' warn' : ''}">${changed}</p></div>
+  `;
+
+  const checkedDate = (liveData && liveData.funds && liveData.funds.af)
+    ? liveData.funds.af.lastChecked
+    : null;
+  const footnote = document.getElementById('footnote');
+  if (checkedDate) {
+    const d = new Date(checkedDate + 'T06:00:00Z');
+    const formatted = d.toLocaleString('en-GB', {
+      day: 'numeric', month: 'long', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', timeZoneName: 'short', timeZone: 'UTC'
+    });
+    footnote.innerHTML = `Last automatically checked: ${formatted}. Runs daily at 06:00 UTC via GitHub Actions. "Copy briefing to clipboard" copies a summary of all funds ready to paste into an email.`;
+  }
+}
+
 function render() {
+  renderStats();
   const list = document.getElementById('cardList');
   const visible = activeFilter === 'urgent'
     ? funds.filter(f => f.status === 'urgent' || f.status === 'watch')
@@ -258,14 +287,27 @@ document.getElementById('scanBtn').addEventListener('click', async () => {
   }
 });
 
-document.getElementById('emailBtn').addEventListener('click', () => {
-  const subject = 'Climate Funds Briefing  -  ASP Programme Tracker';
+document.getElementById('emailBtn').addEventListener('click', async () => {
+  const subject = 'Climate Funds Briefing - ASP Programme Tracker';
   const lines = funds.map(f =>
-    `${f.short}  -  ${f.statusLabel}\nWindow: ${f.window}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\n`
+    `${f.short} - ${f.statusLabel}\nWindow: ${f.window}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\n`
   ).join('\n');
-  const body = `Climate funds briefing, generated from GIZ ASP-Climate guidance note (Nov 2025)\n\n${lines}\nGenerated for review  -  not yet auto-sent.`;
-  const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  window.open(mailto, '_blank');
+  const body = `${subject}\n${'='.repeat(subject.length)}\n\n${lines}\nGenerated from GIZ ASP-Climate funds tracker.`;
+  try {
+    await navigator.clipboard.writeText(body);
+    const btn = document.getElementById('emailBtn');
+    const original = btn.textContent;
+    btn.textContent = 'Copied to clipboard!';
+    btn.style.background = 'var(--accent-bg)';
+    btn.style.color = 'var(--accent-text)';
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 2500);
+  } catch (e) {
+    alert('Could not copy automatically. Please use Ctrl+C after selecting the text.');
+  }
 });
 
 loadLiveData();
