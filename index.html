@@ -189,6 +189,11 @@ async function loadLiveData() {
 function liveBadgeFor(fundId) {
   if (!liveData || !liveData.funds || !liveData.funds[fundId]) return '';
   const entry = liveData.funds[fundId];
+  if (entry.checkFailed) {
+    return `<p class="meta-line muted" style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--border);">
+      <span style="color:var(--text-primary);font-weight:600;">Check failed</span> - last attempted ${entry.lastChecked}. ${entry.note}
+    </p>`;
+  }
   const changedText = entry.changedSinceLastView
     ? '<span style="color:var(--text-primary);font-weight:600;">Page changed</span> - '
     : '';
