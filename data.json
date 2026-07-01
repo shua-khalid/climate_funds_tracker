@@ -12,7 +12,7 @@
       "lastChanged": null,
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.greenclimate.fund/projects/rfp"
     },
     "cif": {
@@ -20,7 +20,7 @@
       "lastChanged": null,
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
@@ -28,7 +28,7 @@
       "lastChanged": null,
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
@@ -36,8 +36,24 @@
       "lastChanged": null,
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.frld.org/"
+    },
+    "frld_news": {
+      "lastChecked": "2026-07-01",
+      "lastChanged": null,
+      "changedSinceLastView": false,
+      "checkFailed": false,
+      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "sourceUrl": "https://www.frld.org/news"
+    },
+    "frld_b9": {
+      "lastChecked": "2026-07-01",
+      "lastChanged": null,
+      "changedSinceLastView": false,
+      "checkFailed": false,
+      "note": "First scrape - nothing to compare yet. Will detect changes from tomorrow's run.",
+      "sourceUrl": "https://www.frld.org/nodeninth-meeting-board-frld"
     }
   }
 }
