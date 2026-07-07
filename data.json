@@ -1,14 +1,14 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-07-06",
+      "lastChecked": "2026-07-07",
       "lastChanged": null,
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-07-06",
+      "lastChecked": "2026-07-07",
       "lastChanged": "2026-07-03",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -16,23 +16,23 @@
       "sourceUrl": "https://www.greenclimate.fund/projects/rfp"
     },
     "cif": {
-      "lastChecked": "2026-07-06",
-      "lastChanged": "2026-07-06",
+      "lastChecked": "2026-07-07",
+      "lastChanged": "2026-07-07",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-07-06",
+      "lastChecked": "2026-07-07",
       "lastChanged": "2026-07-06",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-07-06",
+      "lastChecked": "2026-07-07",
       "lastChanged": null,
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -40,16 +40,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-07-06",
-      "lastChanged": "2026-07-05",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-07-07",
+      "lastChanged": "2026-07-07",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-07-06",
-      "lastChanged": "2026-07-06",
+      "lastChecked": "2026-07-07",
+      "lastChanged": "2026-07-07",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
