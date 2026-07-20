@@ -120,15 +120,25 @@ def extract_latest_frld(text):
     if not match:
         return None
     date_str = match.group(0).strip()
-    after = text[match.end():match.end() + 200].strip()
+    after = text[match.end():match.end() + 400].strip()
     # Remove the content-type label (Articles and news, Videos, etc)
+    # The label may appear with or without leading punctuation
     after = re.sub(
-        r"^[\s\.\xb7]+(?:articles and news|press releases|videos|publications|events|event)[\s\xb7\.]+",
+        r"^[\s\.\xb7]*(?:articles and news|press releases?|videos?|publications?|events?|event)[\s\xb7\.]*",
         "",
         after,
         flags=re.IGNORECASE,
     )
-    title = after[:200].strip()
+    # Cut at the first complete sentence boundary within 300 chars
+    # to avoid mid-word truncation like "As the secret"
+    sentence_match = re.search(r"[.!?](?:\s|$)", after[:300])
+    if sentence_match:
+        title = after[:sentence_match.end()].strip()
+    else:
+        # No sentence boundary found - fall back to last complete word
+        truncated = after[:250]
+        last_space = truncated.rfind(" ")
+        title = truncated[:last_space].strip() if last_space > 0 else truncated
     return f"{date_str}: {title}"
 
 
