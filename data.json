@@ -1,58 +1,64 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": null,
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-07-19",
-      "lastChanged": "2026-07-03",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-07-20",
+      "lastChanged": "2026-07-20",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "sourceUrl": "https://www.greenclimate.fund/projects/rfp"
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "Active RFP: current REDD+ funding window Enhancing Direct Access (EDA)",
+      "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": "2026-07-17",
       "changedSinceLastView": false,
       "checkFailed": false,
       "note": "No change detected on this check.",
+      "latestContent": "poration World Bank News Hub News How Brazil and Mexico Plan to Decarbonize High-Emitting Industries -- Jul 16, 2026",
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": "2026-07-18",
       "changedSinceLastView": false,
       "checkFailed": false,
       "note": "No change detected on this check.",
+      "latestContent": "Newsroom Topics Search by title Agency Country Topic Apply Feature Story Finding deep roots of agreement for soil health -- July 14, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": "2026-07-19",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
+      "latestContent": "July 11, 2026: \u00b7 Event Ninth Meeting of the Board of the FRLD The Ninth meeting of the Board of the FRLD will convene on 08-10 July, 20",
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": "2026-07-19",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
+      "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares fo",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-07-19",
+      "lastChecked": "2026-07-20",
       "lastChanged": "2026-07-09",
       "changedSinceLastView": false,
       "checkFailed": false,
       "note": "No change detected on this check.",
+      "latestContent": null,
       "sourceUrl": "https://www.frld.org/nodeninth-meeting-board-frld"
     }
   }
