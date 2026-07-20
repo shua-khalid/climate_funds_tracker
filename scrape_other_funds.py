@@ -123,12 +123,12 @@ def extract_latest_frld(text):
     after = text[match.end():match.end() + 200].strip()
     # Remove the content-type label (Articles and news, Videos, etc)
     after = re.sub(
-        r"^[\s\.\xb7]+(?:articles and news|press releases|videos|publications|events)[\s\xb7\.]+",
+        r"^[\s\.\xb7]+(?:articles and news|press releases|videos|publications|events|event)[\s\xb7\.]+",
         "",
         after,
         flags=re.IGNORECASE,
     )
-    title = after[:120].strip()
+    title = after[:200].strip()
     return f"{date_str}: {title}"
 
 
