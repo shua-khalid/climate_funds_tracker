@@ -5,6 +5,7 @@
       "lastChanged": null,
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
+      "latestContent": "Submission process: .... Submissions for all funding windows are now accepted on a rolling basis (Decision B.40/59). This means that submission of project and programme proposals to the Adaptation Fund c...",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
@@ -39,7 +40,7 @@
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - baseline established. Will detect changes from tomorrow.",
+      "note": "No change detected on this check.",
       "latestContent": "July 11, 2026: Ninth Meeting of the Board of the FRLD The Ninth meeting of the Board of the FRLD will convene on 08-10 July, 2026 at Asian Development Bank Headquarters in Manila, Philippines. As the secret",
       "sourceUrl": "https://www.frld.org/"
     },
@@ -48,7 +49,7 @@
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "First scrape - baseline established. Will detect changes from tomorrow.",
+      "note": "No change detected on this check.",
       "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The",
       "sourceUrl": "https://www.frld.org/news"
     },
