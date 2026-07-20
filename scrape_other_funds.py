@@ -90,6 +90,11 @@ def extract_latest_cif(text):
     date_str = match.group(0).strip()
     before = text[max(0, match.start() - 120):match.start()].strip()
     title = re.split(r"[|\n]", before)[-1].strip()[-100:]
+    # Strip any navigation noise that crept in before the real title
+    title = re.sub(
+        r"^.*?(?:news hub|newsroom|press releases?)\s*(?:\w+\s+)?",
+        "", title, flags=re.IGNORECASE
+    ).strip()
     return f"{title} -- {date_str}"
 
 
@@ -101,6 +106,11 @@ def extract_latest_gef(text):
     date_str = match.group(0).strip()
     before = text[max(0, match.start() - 200):match.start()].strip()
     title = re.split(r"[|\n]", before)[-1].strip()[-120:]
+    # Strip navigation noise (Newsroom Topics Search by title etc)
+    title = re.sub(
+        r"^.*?(?:feature story|press release|news|blog|multimedia|publication)\s+",
+        "", title, flags=re.IGNORECASE
+    ).strip()
     return f"{title} -- {date_str}"
 
 
