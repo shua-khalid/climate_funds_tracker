@@ -171,7 +171,7 @@ let liveData = null;
 
 async function loadLiveData() {
   try {
-    const response = await fetch('data.json', { cache: 'no-store' });
+    const response = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
     if (response.ok) {
       liveData = await response.json();
     }
@@ -192,8 +192,11 @@ function liveBadgeFor(fundId) {
   const changedText = entry.changedSinceLastView
     ? '<span style="color:var(--text-primary);font-weight:600;">Page changed</span> - '
     : '';
+  const contentLine = entry.latestContent
+    ? `<br><span style="color:var(--text-secondary)">Latest from page:</span> ${entry.latestContent}`
+    : '';
   return `<p class="meta-line muted" style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--border);">
-    ${changedText}Live check: last looked at ${entry.lastChecked}. ${entry.note}
+    ${changedText}Live check: ${entry.lastChecked}. ${entry.note}${contentLine}
   </p>`;
 }
 
