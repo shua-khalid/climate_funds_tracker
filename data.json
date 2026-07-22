@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-07-21",
+      "lastChecked": "2026-07-22",
       "lastChanged": null,
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-07-21",
+      "lastChecked": "2026-07-22",
       "lastChanged": "2026-07-20",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-07-21",
-      "lastChanged": "2026-07-21",
+      "lastChecked": "2026-07-22",
+      "lastChanged": "2026-07-22",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -27,8 +27,8 @@
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-07-21",
-      "lastChanged": "2026-07-21",
+      "lastChecked": "2026-07-22",
+      "lastChanged": "2026-07-22",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -36,7 +36,7 @@
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-07-21",
+      "lastChecked": "2026-07-22",
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -45,7 +45,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-07-21",
+      "lastChecked": "2026-07-22",
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -54,7 +54,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-07-21",
+      "lastChecked": "2026-07-22",
       "lastChanged": "2026-07-09",
       "changedSinceLastView": false,
       "checkFailed": false,
