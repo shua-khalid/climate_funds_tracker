@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-07-22",
+      "lastChecked": "2026-07-23",
       "lastChanged": null,
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-07-22",
+      "lastChecked": "2026-07-23",
       "lastChanged": "2026-07-20",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,17 +18,17 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-07-22",
-      "lastChanged": "2026-07-22",
+      "lastChecked": "2026-07-23",
+      "lastChanged": "2026-07-23",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "How Brazil and Mexico Plan to Decarbonize High-Emitting Industries -- Jul 16, 2026",
+      "latestContent": "Big Ambitions, Bigger Capital: How CIF Unlocks Private Investment -- Jul 22, 2026",
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-07-22",
-      "lastChanged": "2026-07-22",
+      "lastChecked": "2026-07-23",
+      "lastChanged": "2026-07-23",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -36,7 +36,7 @@
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-07-22",
+      "lastChecked": "2026-07-23",
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -45,7 +45,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-07-22",
+      "lastChecked": "2026-07-23",
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -54,7 +54,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-07-22",
+      "lastChecked": "2026-07-23",
       "lastChanged": "2026-07-09",
       "changedSinceLastView": false,
       "checkFailed": false,
