@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-06",
       "lastChanged": "2026-07-31",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-06",
       "lastChanged": "2026-07-20",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,25 +18,25 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-08-05",
-      "lastChanged": "2026-08-04",
+      "lastChecked": "2026-08-06",
+      "lastChanged": "2026-08-06",
       "changedSinceLastView": true,
-      "checkFailed": true,
-      "note": "Automated check failed on 2026-08-05: could not reach the page.",
+      "checkFailed": false,
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "Story CIF Youth Fellowship: Meet our Six Young Leaders -- Aug 03, 2026",
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-08-05",
-      "lastChanged": "2026-08-05",
+      "lastChecked": "2026-08-06",
+      "lastChanged": "2026-08-06",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "Dryland regions hold wisdom for the future -- July 31, 2026",
+      "latestContent": "The GEF at a Glance -- August 5, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-06",
       "lastChanged": "2026-07-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -45,16 +45,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-06",
       "lastChanged": "2026-08-05",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth meeting of the Board of the Fund for responding to Loss and",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-08-05",
+      "lastChecked": "2026-08-06",
       "lastChanged": "2026-07-24",
       "changedSinceLastView": false,
       "checkFailed": false,
