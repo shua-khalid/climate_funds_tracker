@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-08-11",
+      "lastChecked": "2026-08-12",
       "lastChanged": "2026-07-31",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-08-11",
+      "lastChecked": "2026-08-12",
       "lastChanged": "2026-07-20",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-08-11",
-      "lastChanged": "2026-08-11",
+      "lastChecked": "2026-08-12",
+      "lastChanged": "2026-08-12",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -27,16 +27,16 @@
       "sourceUrl": "https://www.cif.org/news"
     },
     "gef": {
-      "lastChecked": "2026-08-11",
-      "lastChanged": "2026-08-11",
+      "lastChecked": "2026-08-12",
+      "lastChanged": "2026-08-12",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "Young creatives, urgent voices: GEF and the 2026 Earth Partner Prize -- August 10, 2026",
+      "latestContent": "Conservation lessons: speak less, listen more, be patient -- August 11, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom"
     },
     "frld": {
-      "lastChecked": "2026-08-11",
+      "lastChecked": "2026-08-12",
       "lastChanged": "2026-08-07",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -45,16 +45,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-08-11",
-      "lastChanged": "2026-08-07",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-08-12",
+      "lastChanged": "2026-08-12",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth meeting of the Board of the Fund for responding to Loss and",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-08-11",
+      "lastChecked": "2026-08-12",
       "lastChanged": "2026-08-07",
       "changedSinceLastView": false,
       "checkFailed": false,
