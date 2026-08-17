@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Climate Funds Tracker  -  GIZ ASP Programme</title>
+<title>Climate Funds Tracker</title>
 <style>
   :root {
     --bg-page: #F7F6F2;
@@ -17,6 +17,7 @@
     --accent: #0F6E56;
     --accent-bg: #E1F5EE;
     --accent-text: #085041;
+    --link: #0F6E56;
   }
   * { box-sizing: border-box; }
   body {
@@ -27,7 +28,7 @@
     padding: 32px 16px;
     line-height: 1.5;
   }
-  .wrap { max-width: 760px; margin: 0 auto; }
+  .wrap { max-width: 800px; margin: 0 auto; }
   h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
   .subtitle { margin: 0 0 24px; font-size: 13px; color: var(--text-secondary); }
   .header-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 4px; }
@@ -38,7 +39,7 @@
   }
   .btn:hover { background: var(--bg-secondary); }
   .btn:active { transform: scale(0.98); }
-  .btn-row { display: flex; gap: 8px; }
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
   .status-banner {
     display: none; font-size: 13px; padding: 10px 14px; border-radius: 8px;
     background: var(--accent-bg); color: var(--accent-text); margin-bottom: 20px;
@@ -54,22 +55,46 @@
   .filter-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
   .filter-btn { font-size: 13px; padding: 6px 14px; border-radius: 8px; border: 0.5px solid var(--border-strong); background: var(--bg-card); cursor: pointer; }
   .filter-btn.active { background: var(--bg-secondary); font-weight: 600; }
-  .card-list { display: flex; flex-direction: column; gap: 12px; }
-  .fund-card { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: 12px; padding: 16px 20px; }
-  .fund-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+  .card-list { display: flex; flex-direction: column; gap: 14px; }
+  .fund-card { background: var(--bg-card); border: 0.5px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .fund-header { padding: 16px 20px; }
+  .fund-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .fund-id { display: flex; align-items: center; gap: 10px; }
   .icon-box { min-width: 44px; height: 36px; padding: 0 6px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .fund-name { font-weight: 600; font-size: 15px; margin: 0; }
   .fund-short { font-size: 12px; color: var(--text-secondary); margin: 0; }
   .status-pill { font-size: 12px; padding: 4px 10px; border-radius: 8px; white-space: nowrap; }
-  .detail-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; font-size: 13px; margin: 10px 0; }
+  .section-toggle { display: flex; border-top: 0.5px solid var(--border); }
+  .section-btn {
+    flex: 1; padding: 10px 12px; font-size: 12px; font-weight: 600;
+    background: var(--bg-secondary); border: none; cursor: pointer;
+    color: var(--text-secondary); border-right: 0.5px solid var(--border);
+  }
+  .section-btn:last-child { border-right: none; }
+  .section-btn.active { background: var(--bg-card); color: var(--text-primary); }
+  .section-body { padding: 16px 20px; display: none; }
+  .section-body.active { display: block; }
+  .detail-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; font-size: 13px; margin: 0 0 10px; }
   .detail-label { color: var(--text-secondary); margin: 0 0 2px; }
   .detail-value { margin: 0; }
   .meta-line { font-size: 13px; margin: 8px 0 0; line-height: 1.6; }
   .meta-line.muted { color: var(--text-secondary); }
-  .meta-line i { font-size: 14px; vertical-align: -2px; margin-right: 5px; }
   .label-inline { color: var(--text-secondary); }
   .footnote { font-size: 12px; color: var(--text-tertiary); margin-top: 24px; line-height: 1.6; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .update-item { padding: 10px 0; border-top: 0.5px solid var(--border); }
+  .update-item:first-child { border-top: none; padding-top: 0; }
+  .update-type { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-tertiary); margin: 0 0 3px; }
+  .accred-yes { color: var(--accent-text); font-weight: 600; }
+  .accred-no { color: var(--text-secondary); }
+  @media print {
+    body { background: white; padding: 0; }
+    .btn-row, .filter-row, .status-banner { display: none !important; }
+    .section-body { display: block !important; }
+    .section-toggle { display: none !important; }
+    .fund-card { break-inside: avoid; border: 1px solid #ccc; margin-bottom: 12px; }
+  }
 </style>
 </head>
 <body>
@@ -78,18 +103,18 @@
   <div class="header-row">
     <div>
       <h1>Climate funds tracker</h1>
-      <p class="subtitle">ASP for Climate Resilience &middot; GIZ Pakistan &middot; prototype</p>
+      <p class="subtitle">Adaptive Social Protection for Climate Resilience</p>
     </div>
     <div class="btn-row">
       <button class="btn" id="scanBtn">Check for updates</button>
       <button class="btn" id="emailBtn">Copy briefing to clipboard</button>
+      <button class="btn" id="pdfBtn">Export as PDF</button>
     </div>
   </div>
 
   <div class="status-banner" id="scanStatus"></div>
 
-  <div class="stats" id="statsRow">
-  </div>
+  <div class="stats" id="statsRow"></div>
 
   <div class="filter-row" id="filterRow">
     <button class="filter-btn active" data-filter="all">All funds</button>
@@ -100,7 +125,6 @@
 
   <p class="footnote" id="footnote">
     All 5 fund pages checked automatically every day at 06:00 UTC via GitHub Actions.
-    "Copy briefing to clipboard" copies a summary of all funds ready to paste into an email.
   </p>
 </div>
 
@@ -116,58 +140,79 @@ const colorMap = {
 const funds = [
   {
     id: 'frld', name: 'Fund for responding to Loss and Damage', short: 'FRLD',
-    color: 'coral', icon: 'ti-alert-triangle', status: 'urgent',
+    color: 'coral', status: 'urgent',
     statusLabel: '9th Board meeting concluded July 2026',
     window: 'Barbados Implementation Modalities (BIM) - start-up phase',
     amount: 'USD 5M-20M per request (USD 250M total, first phase)',
+    eligibility: 'All developing countries that are Parties to the UNFCCC and the Paris Agreement and are particularly vulnerable to climate change. Not restricted to ODA-eligible countries only - broader than most other MCFs. 50% floor reserved for SIDS and LDCs.',
+    accredited: false,
+    accreditedNote: 'GIZ is not currently listed among entities accredited to FRLD directly (per FRLD Board document B.9/14). GIZ is accredited to GCF, which may support fast-track consideration in future FRLD accreditation rounds.',
     deadline: 'BIM call ran 15 Dec 2025 to 15 June 2026 (closed). 9th Board meeting concluded 8-10 July 2026 in Manila, advancing resource mobilization. Watch for approved project announcements and phase 2 call details.',
     spLink: 'Decision 1/CP.28 explicitly calls for scaling adaptive social protection. 50% floor reserved for SIDS/LDCs. SP named as eligible activity for rapid response and recovery.',
-    prep: 'Check frld.org/news for the full 9th Board meeting outcomes - published July 10, 2026. Second replenishment process begins 2027. Pakistan should engage its FRLD national focal point now to position for phase 2.'
+    prep: 'Second replenishment process begins 2027. Engage FRLD national focal point now to position for phase 2.',
+    sourceUrl: 'https://www.frld.org/'
   },
   {
     id: 'gcf', name: 'Green Climate Fund', short: 'GCF',
-    color: 'teal', icon: 'ti-leaf', status: 'open',
-    statusLabel: 'Rolling  -  regular project cycle open',
+    color: 'teal', status: 'open',
+    statusLabel: 'Rolling - regular project cycle open',
     window: 'Regular Project Cycle + Simplified Approval Process (<=USD 25M)',
     amount: 'USD 7M readiness funding per country (4-yr cycle); projects often exceed USD 250M',
+    eligibility: 'All developing country Parties to the UNFCCC. Being ODA-eligible is not a mandatory requirement. GCF aims for 50:50 mitigation/adaptation balance, with 50% of adaptation funding ring-fenced for LDCs, SIDS, and African States.',
+    accredited: true,
+    accreditedNote: 'GIZ is a GCF Accredited Entity (accredited 14 Oct 2016, current accreditation term to 17 Jan 2029). Direct access to GCF funding is available through GIZ.',
     deadline: 'Rolling submission; review + approval ~9 months',
     spLink: 'Funded LINK programme in Mozambique (USD 23.5M) linking social protection (PASP) with climate adaptation. FAO-GCF review found 23 SP-linked projects.',
-    prep: 'Requires accredited entity partnership + NDA no-objection letter. Simplified Approval Process is the lower-friction entry point for first-time SP engagement.'
+    prep: 'GIZ accreditation means proposals can be developed and submitted directly - no need to partner with another accredited entity. Simplified Approval Process is the lower-friction entry point for first-time SP engagement.',
+    sourceUrl: 'https://www.greenclimate.fund/access-funding/other-funding-options'
   },
   {
     id: 'gef', name: 'Global Environment Facility (incl. LDCF/SCCF)', short: 'GEF',
-    color: 'green', icon: 'ti-world', status: 'open',
+    color: 'green', status: 'open',
     statusLabel: 'GEF-9 now active - country programming open',
     window: 'LDCF / SCCF under GEF-9 - adaptive social protection named as core approach',
     amount: 'LDCF cap USD 20M/country; SCCF SIDS window USD 3M; GEF-9 runs July 2026-June 2030',
+    eligibility: 'LDCF: all UNFCCC-listed Least Developed Countries. SCCF: all developing countries that have ratified the UNFCCC. GEF Trust Fund: countries that have ratified relevant Rio Conventions. Not restricted to ODA-eligible status.',
+    accredited: false,
+    accreditedNote: 'GIZ is not one of the 18 formal GEF Implementing Agencies (e.g. UNDP, World Bank, IUCN). GIZ typically participates as an executing partner under one of these agencies rather than applying to GEF directly.',
     deadline: 'GEF-9 adopted ~May/June 2026 and now active. Country programming discussions underway. Council meets twice yearly to approve work programmes.',
     spLink: 'GEF-9 is the first GEF strategy to explicitly name adaptive social protection as one of six adaptation approaches - cash transfers, public works, social insurance, labour market interventions.',
-    prep: 'GEF-9 is now active - engage your GEF Operational Focal Point immediately to position SP proposals in the new cycle pipeline before early work programmes fill up.'
+    prep: 'Since GIZ is not a direct Implementing Agency, plan to partner with an accredited agency (e.g. UNDP, FAO) early - identify and engage a partner agency before developing a full proposal.',
+    sourceUrl: 'https://www.thegef.org/newsroom'
   },
   {
     id: 'af', name: 'Adaptation Fund', short: 'AF',
-    color: 'amber', icon: 'ti-droplet', status: 'open',
-    statusLabel: 'Rolling  -  four funding windows open',
+    color: 'amber', status: 'open',
+    statusLabel: 'Rolling - four funding windows open',
     window: 'Action Window (up to USD 25M/country) + Locally Led Adaptation Window',
     amount: 'USD 750K-USD 25M single-country; up to USD 40M regional',
+    eligibility: 'Developing country Parties to the Kyoto Protocol that are particularly vulnerable to climate change (low-lying coastal areas, arid/semi-arid regions, flood or drought-prone areas). Broad vulnerability-based test rather than an income-based one.',
+    accredited: false,
+    accreditedNote: 'GIZ is not currently listed among AF-accredited implementing entities. AF works through 62 accredited entities (39 national, 9 regional, 14 multilateral) - GIZ would need to apply for accreditation or partner with an existing accredited entity.',
     deadline: 'Rolling, reviewed on an ongoing basis by the Board',
-    spLink: '19 projects with direct SP components already funded (USD 155M portfolio). Tunisia IESS-Adapt is the flagship example  -  cash transfers aligned to national programme.',
-    prep: 'No SP-specific window, but Readiness Programme grants (up to USD 250K) can fund proposal development.'
+    spLink: '19 projects with direct SP components already funded (USD 155M portfolio). Tunisia IESS-Adapt is the flagship example - cash transfers aligned to national programme.',
+    prep: 'No SP-specific window, but Readiness Programme grants (up to USD 250K) can fund proposal development. Partnering with an existing accredited National or Multilateral Implementing Entity is the fastest route.',
+    sourceUrl: 'https://www.adaptation-fund.org/apply-funding/'
   },
   {
     id: 'cif', name: 'Climate Investment Funds', short: 'CIF',
-    color: 'purple', icon: 'ti-building-bank', status: 'watch',
+    color: 'purple', status: 'watch',
     statusLabel: 'ARISE EOI deadline passed - evaluation underway',
     window: 'ARISE (launched COP30) + Industry Decarbonization + Accelerating Coal Transition',
     amount: 'USD 10M-500M depending on programme; 5-10 yr duration',
+    eligibility: 'Country must be ODA-eligible at time of call, and must have an active lending programme with at least one of CIF\'s six partner MDBs (World Bank, ADB, AfDB, EBRD, IDB, IFC). More restrictive than AF/GCF/GEF due to the MDB-lending requirement.',
+    accredited: false,
+    accreditedNote: 'CIF funding is accessed exclusively through six Multilateral Development Banks - there is no direct accreditation pathway for GIZ or any non-MDB entity. Engagement must go through a partner MDB with an active country programme.',
     deadline: 'ARISE launched at COP30 Nov 2025. EOI deadline was 19 June 2026 (now passed). Independent expert group now evaluating submissions; selected countries invited to prepare Investment Plans.',
     spLink: 'ARISE EOI explicitly asks applicants to explain how proposals advance adaptive social protection and locally-led adaptation - strongest SP language of any CIF programme to date.',
-    prep: 'EOI window has closed. If Pakistan did not submit, engage your CIF national focal point now about positioning for the next ARISE entry point or other CIF windows (Industry Decarbonization, Coal Transition).'
+    prep: 'EOI window has closed. Engage the relevant MDB country office now about positioning for the next ARISE entry point or other CIF windows.',
+    sourceUrl: 'https://www.cif.org/news'
   }
 ];
 
 let activeFilter = 'all';
 let liveData = null;
+let activeSections = {};
 
 async function loadLiveData() {
   try {
@@ -181,25 +226,6 @@ async function loadLiveData() {
   render();
 }
 
-function liveBadgeFor(fundId) {
-  if (!liveData || !liveData.funds || !liveData.funds[fundId]) return '';
-  const entry = liveData.funds[fundId];
-  if (entry.checkFailed) {
-    return `<p class="meta-line muted" style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--border);">
-      <span style="color:var(--text-primary);font-weight:600;">Check failed</span> - last attempted ${entry.lastChecked}. ${entry.note}
-    </p>`;
-  }
-  const changedText = entry.changedSinceLastView
-    ? '<span style="color:var(--text-primary);font-weight:600;">Page changed</span> - '
-    : '';
-  const contentLine = entry.latestContent
-    ? `<br><span style="color:var(--text-secondary)">Latest from page:</span> ${entry.latestContent}`
-    : '';
-  return `<p class="meta-line muted" style="margin-top:10px;padding-top:10px;border-top:0.5px solid var(--border);">
-    ${changedText}Live check: ${entry.lastChecked}. ${entry.note}${contentLine}
-  </p>`;
-}
-
 function renderStats() {
   const total = funds.length;
   const open = funds.filter(f => f.status === 'open').length;
@@ -208,9 +234,6 @@ function renderStats() {
   if (liveData && liveData.funds) {
     changed = Object.values(liveData.funds).filter(e => e.changedSinceLastView).length;
   }
-  const lastChecked = (liveData && liveData.funds && liveData.funds.af)
-    ? liveData.funds.af.lastChecked
-    : 'not yet run';
 
   document.getElementById('statsRow').innerHTML = `
     <div class="stat-card"><p class="stat-label">Funds tracked</p><p class="stat-value">${total}</p></div>
@@ -233,6 +256,71 @@ function renderStats() {
   }
 }
 
+// Turns a URL into a clickable "View source" link
+function sourceLink(url, label) {
+  if (!url) return '';
+  return ` <a href="${url}" target="_blank" rel="noopener">${label || 'View source \u2192'}</a>`;
+}
+
+function updatesSectionFor(fundId, sourceUrl) {
+  if (!liveData || !liveData.funds || !liveData.funds[fundId]) {
+    return '<p class="meta-line muted">No live check data yet for this page.</p>';
+  }
+  const entry = liveData.funds[fundId];
+  let html = '';
+
+  if (entry.checkFailed) {
+    html += `<div class="update-item">
+      <p class="update-type">Check failed</p>
+      <p class="meta-line">Last attempted ${entry.lastChecked}. ${entry.note}</p>
+    </div>`;
+    return html;
+  }
+
+  const changedBadge = entry.changedSinceLastView
+    ? '<span style="color:var(--text-primary);font-weight:600;">Page changed</span> - '
+    : '';
+
+  html += `<div class="update-item">
+    <p class="update-type">Automated check</p>
+    <p class="meta-line">${changedBadge}Last checked ${entry.lastChecked}. ${entry.note}${sourceLink(sourceUrl, 'View live page \u2192')}</p>
+  </div>`;
+
+  if (entry.latestContent) {
+    html += `<div class="update-item">
+      <p class="update-type">Latest article / update found</p>
+      <p class="meta-line">${entry.latestContent}${sourceLink(sourceUrl, 'Read full article \u2192')}</p>
+    </div>`;
+  }
+
+  if (entry.latestWebinar) {
+    html += `<div class="update-item">
+      <p class="update-type">Latest webinar found</p>
+      <p class="meta-line">${entry.latestWebinar}${sourceLink(entry.webinarUrl || sourceUrl, 'Watch / view \u2192')}</p>
+    </div>`;
+  }
+
+  return html;
+}
+
+function basicInfoSectionFor(f) {
+  const accredHtml = f.accredited
+    ? `<span class="accred-yes">Yes - GIZ is an accredited entity</span>`
+    : `<span class="accred-no">Not currently accredited</span>`;
+
+  return `
+    <div class="detail-grid">
+      <div><p class="detail-label">Window</p><p class="detail-value">${f.window}</p></div>
+      <div><p class="detail-label">Funding</p><p class="detail-value">${f.amount}</p></div>
+    </div>
+    <p class="meta-line"><span class="label-inline">Who can apply:</span> ${f.eligibility}</p>
+    <p class="meta-line"><span class="label-inline">GIZ accreditation status:</span> ${accredHtml}<br>${f.accreditedNote}</p>
+    <p class="meta-line"><span class="label-inline">Deadline / timing:</span> ${f.deadline}</p>
+    <p class="meta-line"><span class="label-inline">SP entry point:</span> ${f.spLink}</p>
+    <p class="meta-line muted">${f.prep}</p>
+  `;
+}
+
 function render() {
   renderStats();
   const list = document.getElementById('cardList');
@@ -242,30 +330,46 @@ function render() {
 
   list.innerHTML = visible.map(f => {
     const c = colorMap[f.color];
+    const section = activeSections[f.id] || 'basic';
+
     return `
     <div class="fund-card">
-      <div class="fund-top">
-        <div class="fund-id">
-          <div class="icon-box" style="background:${c.bg};color:${c.text};font-size:12px;font-weight:600;">
-            ${f.short}
+      <div class="fund-header">
+        <div class="fund-top">
+          <div class="fund-id">
+            <div class="icon-box" style="background:${c.bg};color:${c.text};font-size:12px;font-weight:600;">
+              ${f.short}
+            </div>
+            <div>
+              <p class="fund-name">${f.name}</p>
+              <p class="fund-short">${f.short}</p>
+            </div>
           </div>
-          <div>
-            <p class="fund-name">${f.name}</p>
-            <p class="fund-short">${f.short}</p>
-          </div>
+          <span class="status-pill" style="background:${c.bg};color:${c.text}">${f.statusLabel}</span>
         </div>
-        <span class="status-pill" style="background:${c.bg};color:${c.text}">${f.statusLabel}</span>
       </div>
-      <div class="detail-grid">
-        <div><p class="detail-label">Window</p><p class="detail-value">${f.window}</p></div>
-        <div><p class="detail-label">Funding</p><p class="detail-value">${f.amount}</p></div>
+      <div class="section-toggle">
+        <button class="section-btn ${section === 'basic' ? 'active' : ''}" data-fund="${f.id}" data-section="basic">Basic Information</button>
+        <button class="section-btn ${section === 'updates' ? 'active' : ''}" data-fund="${f.id}" data-section="updates">Latest Updates</button>
       </div>
-      <p class="meta-line"><span class="label-inline">Deadline / timing:</span> ${f.deadline}</p>
-      <p class="meta-line"><span class="label-inline">SP entry point:</span> ${f.spLink}</p>
-      <p class="meta-line muted">${f.prep}</p>
-      ${liveBadgeFor(f.id)}
+      <div class="section-body ${section === 'basic' ? 'active' : ''}" data-fund="${f.id}" data-section-body="basic">
+        ${basicInfoSectionFor(f)}
+      </div>
+      <div class="section-body ${section === 'updates' ? 'active' : ''}" data-fund="${f.id}" data-section-body="updates">
+        ${updatesSectionFor(f.id, f.sourceUrl)}
+      </div>
     </div>`;
   }).join('');
+
+  // Wire up section toggle buttons
+  document.querySelectorAll('.section-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const fundId = btn.dataset.fund;
+      const section = btn.dataset.section;
+      activeSections[fundId] = section;
+      render();
+    });
+  });
 }
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -293,9 +397,9 @@ document.getElementById('scanBtn').addEventListener('click', async () => {
 document.getElementById('emailBtn').addEventListener('click', async () => {
   const subject = 'Climate Funds Briefing - ASP Programme Tracker';
   const lines = funds.map(f =>
-    `${f.short} - ${f.statusLabel}\nWindow: ${f.window}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\n`
+    `${f.short} - ${f.statusLabel}\nWindow: ${f.window}\nWho can apply: ${f.eligibility}\nGIZ accredited: ${f.accredited ? 'Yes' : 'No'}\nFunding: ${f.amount}\nTiming: ${f.deadline}\nSP entry point: ${f.spLink}\nNext step: ${f.prep}\nSource: ${f.sourceUrl}\n`
   ).join('\n');
-  const body = `${subject}\n${'='.repeat(subject.length)}\n\n${lines}\nGenerated from GIZ ASP-Climate funds tracker.`;
+  const body = `${subject}\n${'='.repeat(subject.length)}\n\n${lines}\nGenerated from Climate Funds Tracker.`;
   try {
     await navigator.clipboard.writeText(body);
     const btn = document.getElementById('emailBtn');
@@ -311,6 +415,12 @@ document.getElementById('emailBtn').addEventListener('click', async () => {
   } catch (e) {
     alert('Could not copy automatically. Please use Ctrl+C after selecting the text.');
   }
+});
+
+document.getElementById('pdfBtn').addEventListener('click', () => {
+  // Expand all sections so the PDF captures everything, not just the active tab
+  document.querySelectorAll('.section-body').forEach(el => el.classList.add('active'));
+  window.print();
 });
 
 loadLiveData();
