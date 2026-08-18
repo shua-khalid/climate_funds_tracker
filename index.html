@@ -287,9 +287,10 @@ function updatesSectionFor(fundId, sourceUrl) {
   </div>`;
 
   if (entry.latestContent) {
+    const linkTarget = entry.articleUrl || sourceUrl;
     html += `<div class="update-item">
       <p class="update-type">Latest article / update found</p>
-      <p class="meta-line">${entry.latestContent}${sourceLink(sourceUrl, 'Read full article \u2192')}</p>
+      <p class="meta-line">${entry.latestContent}${sourceLink(linkTarget, 'Read full article \u2192')}</p>
     </div>`;
   }
 
