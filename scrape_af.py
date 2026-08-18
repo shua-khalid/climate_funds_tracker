@@ -13,6 +13,7 @@ What this does:
 """
 
 import hashlib
+import html as html_module
 import json
 import os
 import re
@@ -45,6 +46,8 @@ def strip_html(html):
     text = re.sub(r"<script.*?</script>", " ", html, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"<style.*?</style>", " ", text, flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r"<[^>]+>", " ", text)
+    # Decode HTML entities like &#039; -> ' and &amp; -> & before collapsing whitespace
+    text = html_module.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
