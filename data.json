@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-08-20",
+      "lastChecked": "2026-08-21",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-08-20",
+      "lastChecked": "2026-08-21",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-08-20",
-      "lastChanged": "2026-08-20",
+      "lastChecked": "2026-08-21",
+      "lastChanged": "2026-08-21",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,8 +28,8 @@
       "articleUrl": "https://www.cif.org/news/big-ambitions-bigger-capital-how-cif-unlocks-private-investment"
     },
     "gef": {
-      "lastChecked": "2026-08-20",
-      "lastChanged": "2026-08-20",
+      "lastChecked": "2026-08-21",
+      "lastChanged": "2026-08-21",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -38,7 +38,7 @@
       "articleUrl": "https://www.thegef.org/newsroom/feature-stories/designing-solutions-build-trust-and-listen"
     },
     "frld": {
-      "lastChecked": "2026-08-20",
+      "lastChecked": "2026-08-21",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,20 +47,20 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-08-20",
-      "lastChanged": "2026-08-19",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-08-21",
+      "lastChanged": "2026-08-21",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth meeting of the Board of the Fund for responding to Loss and",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-08-20",
+      "lastChecked": "2026-08-21",
       "lastChanged": "2026-08-20",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": null,
       "sourceUrl": "https://www.frld.org/nodeninth-meeting-board-frld"
     }
