@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,7 +28,7 @@
       "articleUrl": "https://www.cif.org/news/big-ambitions-bigger-capital-how-cif-unlocks-private-investment"
     },
     "gef": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,7 +38,7 @@
       "articleUrl": "https://www.thegef.org/newsroom/feature-stories/designing-solutions-build-trust-and-listen"
     },
     "frld": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-08-23",
       "lastChanged": "2026-08-20",
       "changedSinceLastView": false,
       "checkFailed": false,
