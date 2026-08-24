@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/big-ambitions-bigger-capital-how-cif-unlocks-private-investment"
     },
     "gef": {
-      "lastChecked": "2026-08-23",
-      "lastChanged": "2026-08-21",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-08-24",
+      "lastChanged": "2026-08-24",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "Before designing solutions, build trust and listen -- August 19, 2026",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "New GEF initiative will support UNCCD to strengthen drylands and drought resilience -- August 23, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/designing-solutions-build-trust-and-listen"
+      "articleUrl": "https://www.thegef.org/newsroom/press-releases/new-gef-initiative-will-support-unccd-strengthen-drylands-and-drought"
     },
     "frld": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-08-23",
+      "lastChecked": "2026-08-24",
       "lastChanged": "2026-08-20",
       "changedSinceLastView": false,
       "checkFailed": false,
