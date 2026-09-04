@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "lastChanged": "2026-09-02",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,17 +18,17 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-03",
-      "lastChanged": "2026-08-27",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-04",
+      "lastChanged": "2026-09-04",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "From Solar Panels to Sewing Machines: New Livelihoods for Women in Rajasthan -- Aug 19, 2026",
       "sourceUrl": "https://www.cif.org/news",
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "lastChanged": "2026-08-25",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,25 +38,25 @@
       "articleUrl": "https://www.thegef.org/newsroom/press-releases/new-gef-initiative-will-support-unccd-strengthen-drylands-and-drought"
     },
     "frld": {
-      "lastChecked": "2026-09-03",
-      "lastChanged": "2026-08-19",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-04",
+      "lastChanged": "2026-09-04",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "July 11, 2026: Ninth Meeting of the Board of the FRLD The Ninth meeting of the Board of the FRLD will convene on 08-10 July, 2026 at Asian Development Bank Headquarters in Manila, Philippines.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "September 03, 2026: Media Statement on Nepal July 11, 2026 \u00b7 Event Ninth Meeting of the Board of the FRLD The Ninth meeting of the Board of the FRLD will convene on 08-10 July, 2026 at Asian Development Bank Headquarters in Manila, Philippines.",
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-03",
-      "lastChanged": "2026-08-27",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-04",
+      "lastChanged": "2026-09-04",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "July 10, 2026: The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth meeting of the Board of the Fund for responding to Loss and",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "September 03, 2026: Media Statement on Nepal July 10, 2026 \u00b7 Articles and news The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
