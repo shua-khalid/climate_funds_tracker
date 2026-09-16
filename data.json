@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-15",
+      "lastChecked": "2026-09-16",
       "lastChanged": "2026-08-19",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,17 +9,17 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-15",
-      "lastChanged": "2026-09-02",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-16",
+      "lastChanged": "2026-09-16",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "Active RFP: current REDD+ funding window Enhancing Direct Access (EDA)",
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-15",
-      "lastChanged": "2026-09-15",
+      "lastChecked": "2026-09-16",
+      "lastChanged": "2026-09-16",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-15",
+      "lastChecked": "2026-09-16",
       "lastChanged": "2026-09-15",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "New GEF initiative will support UNCCD to strengthen drylands and drought resilience -- August 24, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
       "articleUrl": "https://www.thegef.org/newsroom/press-releases/new-gef-initiative-will-support-unccd-strengthen-drylands-and-drought"
     },
     "frld": {
-      "lastChecked": "2026-09-15",
+      "lastChecked": "2026-09-16",
       "lastChanged": "2026-09-04",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,8 +47,8 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-15",
-      "lastChanged": "2026-09-15",
+      "lastChecked": "2026-09-16",
+      "lastChanged": "2026-09-16",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-15",
+      "lastChecked": "2026-09-16",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
