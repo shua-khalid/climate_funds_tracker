@@ -1,25 +1,25 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-17",
-      "lastChanged": "2026-08-19",
-      "changedSinceLastView": false,
-      "note": "No change detected on this check.",
+      "lastChecked": "2026-09-18",
+      "lastChanged": "2026-09-18",
+      "changedSinceLastView": true,
+      "note": "Page content changed since last check - review for procedure updates.",
       "latestContent": "Submission process: .... Submissions for all funding windows are now accepted on a rolling basis (Decision B.40/59). This means that submission of project and programme proposals to the Adaptation Fund c...",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-18",
       "lastChanged": "2026-09-17",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "Active RFP: current REDD+ funding window Enhancing Direct Access (EDA)",
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-17",
-      "lastChanged": "2026-09-17",
+      "lastChecked": "2026-09-18",
+      "lastChanged": "2026-09-18",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-18",
       "lastChanged": "2026-09-17",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "The LDCF in Numbers -- September 16, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
       "articleUrl": "https://www.thegef.org/newsroom/publications/ldcf-numbers"
     },
     "frld": {
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-18",
       "lastChanged": "2026-09-04",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,16 +47,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-18",
       "lastChanged": "2026-09-17",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "September 03, 2026: Media Statement on Nepal July 10, 2026 \u00b7 Articles and news The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-17",
+      "lastChecked": "2026-09-18",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
