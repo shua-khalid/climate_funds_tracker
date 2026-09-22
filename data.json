@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-09-18",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-09-17",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-21",
-      "lastChanged": "2026-09-21",
+      "lastChecked": "2026-09-22",
+      "lastChanged": "2026-09-22",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,7 +28,7 @@
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-09-17",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,7 +38,7 @@
       "articleUrl": "https://www.thegef.org/newsroom/publications/ldcf-numbers"
     },
     "frld": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-09-04",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-09-19",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-21",
+      "lastChecked": "2026-09-22",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
