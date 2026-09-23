@@ -1,15 +1,15 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-22",
-      "lastChanged": "2026-09-18",
-      "changedSinceLastView": false,
-      "note": "No change detected on this check.",
+      "lastChecked": "2026-09-23",
+      "lastChanged": "2026-09-23",
+      "changedSinceLastView": true,
+      "note": "Page content changed since last check - review for procedure updates.",
       "latestContent": "Submission process: .... Submissions for all funding windows are now accepted on a rolling basis (Decision B.40/59). This means that submission of project and programme proposals to the Adaptation Fund c...",
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-22",
+      "lastChecked": "2026-09-23",
       "lastChanged": "2026-09-17",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-22",
-      "lastChanged": "2026-09-22",
+      "lastChecked": "2026-09-23",
+      "lastChanged": "2026-09-23",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,7 +28,7 @@
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-22",
+      "lastChecked": "2026-09-23",
       "lastChanged": "2026-09-17",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,25 +38,25 @@
       "articleUrl": "https://www.thegef.org/newsroom/publications/ldcf-numbers"
     },
     "frld": {
-      "lastChecked": "2026-09-22",
-      "lastChanged": "2026-09-04",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-23",
+      "lastChanged": "2026-09-23",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "September 03, 2026: Media Statement on Nepal July 11, 2026 \u00b7 Event Ninth Meeting of the Board of the FRLD The Ninth meeting of the Board of the FRLD will convene on 08-10 July, 2026 at Asian Development Bank Headquarters in Manila, Philippines.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "September 28, 2026: Updates on the Outcomes of FRLD's 9th Board Meeting Webinar - 9:00 a.m.",
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-22",
-      "lastChanged": "2026-09-19",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-09-23",
+      "lastChanged": "2026-09-23",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "September 03, 2026: Media Statement on Nepal July 10, 2026 \u00b7 Articles and news The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-22",
+      "lastChecked": "2026-09-23",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
