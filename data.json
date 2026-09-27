@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-17",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-25",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/solar-panels-sewing-machines-new-livelihoods-women-rajasthan"
     },
     "gef": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-26",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "Interim GEF CEO statement on the UK Government\u2019s pledge to the GEF-9 replenishment -- September 24, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
       "articleUrl": "https://www.thegef.org/newsroom/news/interim-gef-ceo-statement-uk-governments-pledge-gef-9-replenishment"
     },
     "frld": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-25",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-09-26",
+      "lastChecked": "2026-09-27",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
