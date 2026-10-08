@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-10-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-10-03",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/250-million-endorsed-turkiyes-industrial-decarbonization-mobilizing-28-billion"
     },
     "gef": {
-      "lastChecked": "2026-10-07",
-      "lastChanged": "2026-10-06",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-10-08",
+      "lastChanged": "2026-10-08",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "Building a generation of Indigenous engineers and environmental defenders -- October 5, 2026",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "Using technology to connect and protect -- October 7, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/building-generation-indigenous-engineers-and-environmental-defenders"
+      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/using-technology-connect-and-protect"
     },
     "frld": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-10-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-09-30",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-10-07",
+      "lastChecked": "2026-10-08",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
