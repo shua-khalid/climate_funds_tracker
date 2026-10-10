@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-10-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-10-03",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/250-million-endorsed-turkiyes-industrial-decarbonization-mobilizing-28-billion"
     },
     "gef": {
-      "lastChecked": "2026-10-09",
-      "lastChanged": "2026-10-09",
+      "lastChecked": "2026-10-10",
+      "lastChanged": "2026-10-10",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "Guardians of the Land: Indigenous-led Conservation in Brazil -- October 8, 2026",
+      "latestContent": "In service of nature and people: Continuing the conservation legacy of Gustavo Fonseca -- October 9, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/multimedia/guardians-land-indigenous-led-conservation-brazil"
+      "articleUrl": "https://www.thegef.org/newsroom/multimedia/service-nature-and-people-continuing-conservation-legacy-gustavo-fonseca"
     },
     "frld": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-10-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,16 +47,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-10-09",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "September 03, 2026: Media Statement on Nepal July 10, 2026 \u00b7 Articles and news The Fund for responding to Loss and Damage Board Concludes Ninth Meeting, Advances Resource Mobilization and Prepares for Funding Decisions Manila, Philippines, 10 July 2026 \u2013 The ninth",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "lastChanged": "2026-08-29",
       "changedSinceLastView": false,
       "checkFailed": false,
