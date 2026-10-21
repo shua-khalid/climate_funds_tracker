@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-10-20",
+      "lastChecked": "2026-10-21",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-10-20",
+      "lastChecked": "2026-10-21",
       "lastChanged": "2026-10-16",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,28 +18,28 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-10-20",
+      "lastChecked": "2026-10-21",
       "lastChanged": "2026-10-20",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "CIF ENDORSES $116 MILLION PLAN TO SUPPORT RESILIENT ENERGY IN UKRAINE -- Oct 02, 2026",
       "sourceUrl": "https://www.cif.org/news",
       "articleUrl": "https://www.cif.org/news/cif-endorses-116-million-plan-support-resilient-energy-ukraine"
     },
     "gef": {
-      "lastChecked": "2026-10-20",
-      "lastChanged": "2026-10-20",
+      "lastChecked": "2026-10-21",
+      "lastChanged": "2026-10-21",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "GEF solutions that put nature at the heart of sustainable development -- October 15, 2026",
+      "latestContent": "Sometimes the most important thing you can do is listen -- October 20, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/gef-solutions-put-nature-heart-sustainable-development"
+      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/sometimes-most-important-thing-you-can-do-listen"
     },
     "frld": {
-      "lastChecked": "2026-10-20",
-      "lastChanged": "2026-10-20",
+      "lastChecked": "2026-10-21",
+      "lastChanged": "2026-10-21",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -47,8 +47,8 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-10-20",
-      "lastChanged": "2026-10-20",
+      "lastChecked": "2026-10-21",
+      "lastChanged": "2026-10-21",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-10-20",
+      "lastChecked": "2026-10-21",
       "lastChanged": "2026-10-17",
       "changedSinceLastView": false,
       "checkFailed": false,
