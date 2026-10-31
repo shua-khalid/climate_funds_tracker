@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-09-23",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,16 +9,16 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-10-30",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "Active RFP: current REDD+ funding window Enhancing Direct Access (EDA)",
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-10-28",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,8 +28,8 @@
       "articleUrl": "https://www.cif.org/news/cif-endorses-116-million-plan-support-resilient-energy-ukraine"
     },
     "gef": {
-      "lastChecked": "2026-10-30",
-      "lastChanged": "2026-10-30",
+      "lastChecked": "2026-10-31",
+      "lastChanged": "2026-10-31",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -38,7 +38,7 @@
       "articleUrl": "https://www.thegef.org/newsroom/feature-stories/i-truly-fell-love-crocodiles"
     },
     "frld": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-10-24",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,16 +47,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-10-30",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "October 22, 2026: The Fund for responding to Loss and Damage provisionally sets aside USD 21.6 million for Nepal, following catastrophic Bhote Khosi flash floods In response to the Bhote Koshi flash floods, in a resounding show of support, the Board of the Fund for",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-10-31",
       "lastChanged": "2026-10-17",
       "changedSinceLastView": false,
       "checkFailed": false,
