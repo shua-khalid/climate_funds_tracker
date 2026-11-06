@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-06",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,36 +9,36 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-05",
-      "lastChanged": "2026-11-02",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-06",
+      "lastChanged": "2026-11-06",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "Active RFP: current REDD+ funding window Enhancing Direct Access (EDA)",
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-05",
-      "lastChanged": "2026-11-05",
+      "lastChecked": "2026-11-06",
+      "lastChanged": "2026-11-06",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "CIF at COP31: Supporting Country-Led Implementation -- Nov 02, 2026",
+      "latestContent": "T\u00fcrkiye\u2019s Ambitions for COP31 are anchored in pioneering efforts at home -- Nov 04, 2026",
       "sourceUrl": "https://www.cif.org/news",
-      "articleUrl": "https://www.cif.org/news/cif-cop31-supporting-country-led-implementation"
+      "articleUrl": "https://www.cif.org/news/turkiyes-ambitions-cop31-are-anchored-pioneering-efforts-home"
     },
     "gef": {
-      "lastChecked": "2026-11-05",
-      "lastChanged": "2026-11-05",
+      "lastChecked": "2026-11-06",
+      "lastChanged": "2026-11-06",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "Resilience Takes Root in Timor-Leste -- November 3, 2026",
+      "latestContent": "GEF-9 Climate Change Mitigation Strategy -- November 5, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/multimedia/resilience-takes-root-timor-leste"
+      "articleUrl": "https://www.thegef.org/newsroom/publications/gef-9-climate-change-mitigation-strategy"
     },
     "frld": {
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-06",
       "lastChanged": "2026-10-24",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-06",
       "lastChanged": "2026-10-30",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-05",
+      "lastChecked": "2026-11-06",
       "lastChanged": "2026-10-17",
       "changedSinceLastView": false,
       "checkFailed": false,
