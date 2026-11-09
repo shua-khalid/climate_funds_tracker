@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-08",
+      "lastChecked": "2026-11-09",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-08",
+      "lastChecked": "2026-11-09",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,7 +18,7 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-08",
+      "lastChecked": "2026-11-09",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -28,7 +28,7 @@
       "articleUrl": "https://www.cif.org/news/turkiyes-ambitions-cop31-are-anchored-pioneering-efforts-home"
     },
     "gef": {
-      "lastChecked": "2026-11-08",
+      "lastChecked": "2026-11-09",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,29 +38,29 @@
       "articleUrl": "https://www.thegef.org/newsroom/publications/gef-9-climate-change-mitigation-strategy"
     },
     "frld": {
-      "lastChecked": "2026-11-08",
-      "lastChanged": "2026-10-24",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-09",
+      "lastChanged": "2026-11-09",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "November 14, 2026: COP31: Fostering Availability, Accessibility and Affordability of Loss and Damage Finance The event aims to foster a shared understanding of the FRLD\u2019s operational priorities and implementation trajectory, identify practical considerations to inform",
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-08",
-      "lastChanged": "2026-11-07",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-09",
+      "lastChanged": "2026-11-09",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "October 22, 2026: The Fund for responding to Loss and Damage provisionally sets aside USD 21.6 million for Nepal, following catastrophic Bhote Khosi flash floods In response to the Bhote Koshi flash floods, in a resounding show of support, the Board of the Fund for",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-08",
-      "lastChanged": "2026-10-17",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-09",
+      "lastChanged": "2026-11-09",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": null,
       "sourceUrl": "https://www.frld.org/nodeninth-meeting-board-frld"
     }
