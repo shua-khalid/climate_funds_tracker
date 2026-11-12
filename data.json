@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-11",
+      "lastChecked": "2026-11-12",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-11",
+      "lastChecked": "2026-11-12",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,27 +18,27 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-11",
-      "lastChanged": "2026-11-06",
-      "changedSinceLastView": false,
-      "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "T\u00fcrkiye\u2019s Ambitions for COP31 are anchored in pioneering efforts at home -- Nov 04, 2026",
-      "sourceUrl": "https://www.cif.org/news",
-      "articleUrl": "https://www.cif.org/news/turkiyes-ambitions-cop31-are-anchored-pioneering-efforts-home"
-    },
-    "gef": {
-      "lastChecked": "2026-11-11",
-      "lastChanged": "2026-11-11",
+      "lastChecked": "2026-11-12",
+      "lastChanged": "2026-11-12",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "GEF unlocks support to lighten fashion factory footprint -- November 10, 2026",
+      "latestContent": "United Kingdom Backs Climate Investment Funds\u2019 AMPLIFi to Unlock Private Finance for Clean Energy in Developing Countries -- Nov 12, 2026",
+      "sourceUrl": "https://www.cif.org/news",
+      "articleUrl": "https://www.cif.org/news/united-kingdom-backs-climate-investment-funds-amplifi-unlock-private-finance-clean-energy"
+    },
+    "gef": {
+      "lastChecked": "2026-11-12",
+      "lastChanged": "2026-11-12",
+      "changedSinceLastView": true,
+      "checkFailed": false,
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "UNFCCC Guidance and Responses by the GEF: COP1 - COP30, CMA1 - CMA7 -- November 11, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/gef-unlocks-support-lighten-fashion-factory-footprint"
+      "articleUrl": "https://www.thegef.org/newsroom/publications/unfccc-guidance-and-responses-gef-cop1-cop30-cma1-cma7"
     },
     "frld": {
-      "lastChecked": "2026-11-11",
+      "lastChecked": "2026-11-12",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,16 +47,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-11",
-      "lastChanged": "2026-11-09",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-12",
+      "lastChanged": "2026-11-12",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "October 22, 2026: The Fund for responding to Loss and Damage provisionally sets aside USD 21.6 million for Nepal, following catastrophic Bhote Khosi flash floods In response to the Bhote Koshi flash floods, in a resounding show of support, the Board of the Fund for",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-11",
+      "lastChecked": "2026-11-12",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
       "checkFailed": false,
