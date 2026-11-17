@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-16",
+      "lastChecked": "2026-11-17",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-16",
+      "lastChecked": "2026-11-17",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,8 +18,8 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-16",
-      "lastChanged": "2026-11-16",
+      "lastChecked": "2026-11-17",
+      "lastChanged": "2026-11-17",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
@@ -28,17 +28,17 @@
       "articleUrl": "https://www.cif.org/news/united-kingdom-backs-climate-investment-funds-amplifi-unlock-private-finance-clean-energy"
     },
     "gef": {
-      "lastChecked": "2026-11-16",
-      "lastChanged": "2026-11-15",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-17",
+      "lastChanged": "2026-11-17",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
-      "latestContent": "How the GEF's unique financing mix has unlocked transformational change for energy in Dominica -- November 12, 2026",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "latestContent": "Governments announce additional $200 million to GEF family of funds at COP31 -- November 17, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/how-gefs-unique-financing-mix-has-unlocked-transformational-change-energy"
+      "articleUrl": "https://www.thegef.org/newsroom/press-releases/governments-announce-additional-200-million-gef-family-funds-cop31"
     },
     "frld": {
-      "lastChecked": "2026-11-16",
+      "lastChecked": "2026-11-17",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,7 +47,7 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-16",
+      "lastChecked": "2026-11-17",
       "lastChanged": "2026-11-15",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -56,7 +56,7 @@
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-16",
+      "lastChecked": "2026-11-17",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
       "checkFailed": false,
