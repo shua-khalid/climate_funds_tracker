@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,49 +18,49 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-19",
-      "lastChanged": "2026-11-19",
+      "lastChecked": "2026-11-20",
+      "lastChanged": "2026-11-20",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "United Kingdom Backs Climate Investment Funds\u2019 AMPLIFi to Unlock Private Finance for Clean Energy in Developing Countries -- Nov 12, 2026",
+      "latestContent": "CIF Selects Five Inaugural Countries and One Regional Program to Scale Climate Adaptation and Resilience Investments -- Nov 12, 2026",
       "sourceUrl": "https://www.cif.org/news",
-      "articleUrl": "https://www.cif.org/news/united-kingdom-backs-climate-investment-funds-amplifi-unlock-private-finance-clean-energy"
+      "articleUrl": "https://www.cif.org/news/cif-selects-five-inaugural-countries-and-one-regional-program-scale-climate-adaptation-and"
     },
     "gef": {
-      "lastChecked": "2026-11-19",
-      "lastChanged": "2026-11-19",
+      "lastChecked": "2026-11-20",
+      "lastChanged": "2026-11-20",
       "changedSinceLastView": true,
       "checkFailed": false,
       "note": "Page content changed since last check - review for new deadlines or calls.",
-      "latestContent": "In Timor-Leste, climate resilience starts with food -- November 18, 2026",
+      "latestContent": "Celebrating 25 years of the Least Developed Countries Fund -- November 19, 2026",
       "sourceUrl": "https://www.thegef.org/newsroom",
-      "articleUrl": "https://www.thegef.org/newsroom/feature-stories/timor-leste-climate-resilience-starts-food"
+      "articleUrl": "https://www.thegef.org/newsroom/multimedia/celebrating-25-years-least-developed-countries-fund"
     },
     "frld": {
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "lastChanged": "2026-11-18",
-      "changedSinceLastView": true,
-      "checkFailed": true,
-      "note": "Automated check failed on 2026-11-19: could not reach the page.",
+      "changedSinceLastView": false,
+      "checkFailed": false,
+      "note": "No change detected on this check.",
       "latestContent": "November 14, 2026: COP31: Fostering Availability, Accessibility and Affordability of Loss and Damage Finance The event aims to foster a shared understanding of the FRLD\u2019s operational priorities and implementation trajectory, identify practical considerations to inform",
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "lastChanged": "2026-11-18",
-      "changedSinceLastView": true,
-      "checkFailed": true,
-      "note": "Automated check failed on 2026-11-19: could not reach the page.",
+      "changedSinceLastView": false,
+      "checkFailed": false,
+      "note": "No change detected on this check.",
       "latestContent": "November 14, 2026: \u00b7 Antalya, Turkey \u00b7 Articles and news FRLD and COP31 Presidency urge increased support for loss and damage November 14, 2026 \u00b7 Antalya, Turkey \u00b7 Articles and news FRLD and COP31 Presidency urge increased support for loss and damage October 22, 2026",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-19",
+      "lastChecked": "2026-11-20",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
-      "checkFailed": true,
-      "note": "Automated check failed on 2026-11-19: could not reach the page.",
+      "checkFailed": false,
+      "note": "No change detected on this check.",
       "latestContent": null,
       "sourceUrl": "https://www.frld.org/nodeninth-meeting-board-frld"
     }
