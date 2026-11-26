@@ -1,7 +1,7 @@
 {
   "funds": {
     "af": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-04",
       "changedSinceLastView": false,
       "note": "No change detected on this check.",
@@ -9,7 +9,7 @@
       "sourceUrl": "https://www.adaptation-fund.org/apply-funding/"
     },
     "gcf": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-06",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -18,17 +18,17 @@
       "sourceUrl": "https://www.greenclimate.fund/access-funding/other-funding-options"
     },
     "cif": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-25",
-      "changedSinceLastView": true,
+      "changedSinceLastView": false,
       "checkFailed": false,
-      "note": "Page content changed since last check - review for new deadlines or calls.",
+      "note": "No change detected on this check.",
       "latestContent": "CIF Selects Five Inaugural Countries and One Regional Program to Scale Climate Adaptation and Resilience Investments -- Nov 12, 2026",
       "sourceUrl": "https://www.cif.org/news",
       "articleUrl": "https://www.cif.org/news/cif-selects-five-inaugural-countries-and-one-regional-program-scale-climate-adaptation-and"
     },
     "gef": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-21",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -38,7 +38,7 @@
       "articleUrl": "https://www.thegef.org/newsroom/multimedia/celebrating-25-years-least-developed-countries-fund"
     },
     "frld": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-18",
       "changedSinceLastView": false,
       "checkFailed": false,
@@ -47,16 +47,16 @@
       "sourceUrl": "https://www.frld.org/"
     },
     "frld_news": {
-      "lastChecked": "2026-11-25",
-      "lastChanged": "2026-11-21",
-      "changedSinceLastView": false,
+      "lastChecked": "2026-11-26",
+      "lastChanged": "2026-11-26",
+      "changedSinceLastView": true,
       "checkFailed": false,
-      "note": "No change detected on this check.",
+      "note": "Page content changed since last check - review for new deadlines or calls.",
       "latestContent": "November 14, 2026: \u00b7 Antalya, Turkey \u00b7 Articles and news FRLD and COP31 Presidency urge increased support for loss and damage November 14, 2026 \u00b7 Antalya, Turkey \u00b7 Articles and news FRLD and COP31 Presidency urge increased support for loss and damage October 22, 2026",
       "sourceUrl": "https://www.frld.org/news"
     },
     "frld_b9": {
-      "lastChecked": "2026-11-25",
+      "lastChecked": "2026-11-26",
       "lastChanged": "2026-11-09",
       "changedSinceLastView": false,
       "checkFailed": false,
